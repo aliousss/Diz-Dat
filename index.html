@@ -1,105 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Diz&Dat - Luxury Fragrances & Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body class="font-sans bg-gray-50">
 
-<!-- Navigation -->
-<nav class="bg-white shadow-lg">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="flex justify-between h-16">
-            <div class="flex items-center">
-                <a href="#" class="text-2xl font-bold text-indigo-600">Diz&Dat</a>
-            </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#products" class="text-gray-700 hover:text-indigo-600">Products</a>
-                <a href="#about" class="text-gray-700 hover:text-indigo-600">About</a>
-                <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
-                <a href="https://wa.me/0706686721" target="_blank" class="text-green-500 hover:text-green-700">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold text-indigo-600">Diz&Dat</a>
         </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#products" class="text-gray-700 hover:text-indigo-600">Products</a>
+          <a href="#about" class="text-gray-700 hover:text-indigo-600">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+          <a
+            href="https://wa.me/0706686721"
+            target="_blank"
+            class="text-green-500 hover:text-green-700"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<!-- Hero Section -->
-<section class="hero-section text-white text-center py-20">
+  <!-- Hero Section -->
+  <section class="hero-section text-white text-center py-20">
     <h1 class="text-4xl md:text-6xl font-bold mb-4">Luxury Fragrances & Fashion</h1>
-    <p class="text-lg md:text-xl max-w-2xl mx-auto">Discover premium perfumes, shoes, and jallabiya at Diz&Dat.</p>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto">
+      Discover premium perfumes, shoes, and jallabiya at Diz&Dat.
+    </p>
     <div class="mt-8">
-        <a href="#products" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition">Shop Now</a>
+      <a
+        href="#products"
+        class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition"
+        >Shop Now</a
+      >
     </div>
-</section>
+  </section>
 
-<!-- Products Section -->
-<section id="products" class="py-16">
+  <!-- Products Section -->
+  <section id="products" class="py-16">
     <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Product Cards will go here -->
-        </div>
+      <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Product Cards will go here -->
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-16 bg-gray-100">
+  <!-- Our Quality Section (NEW) -->
+  <section id="quality" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
-        <div class="max-w-md mx-auto">
-            <form id="contactForm" class="space-y-4">
-                <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded">
-                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded">
-                <textarea rows="4" placeholder="Your Message" class="w-full px-4 py-2 border rounded"></textarea>
-                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded transition">Send Message</button>
-            </form>
-        </div>
-    </div>
-</section>
+      <h2 class="text-3xl font-bold text-center mb-12">Our Quality Diz&Dat Jallabiya</h2>
+      <div class="flex justify-center mb-12">
+        <img
+          src="https://i.postimg.cc/2SY7dc05/Screenshot-65.png"
+          alt="Diz&Dat Jallabiya"
+          class="max-w-full h-auto rounded-lg shadow-lg"
+        />
+      </div>
 
-<!-- Admin Panel -->
-<div class="admin-panel">
-    <button onclick="toggleAdminPanel()" class="fixed bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full shadow-lg">Admin</button>
-    <div id="adminPanel" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-        <div class="bg-white p-6 rounded-lg max-w-md w-full">
-            <h3 class="text-xl font-bold mb-4">Admin Panel</h3>
-            <button onclick="openLoginModal()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded mb-4">Login</button>
-            <button onclick="closeAdminPanel()" class="w-full bg-gray-300 hover:bg-gray-400 py-2 rounded">Cancel</button>
-        </div>
+      <h2 class="text-3xl font-bold text-center mb-8">Our Quality Caps</h2>
+      <div class="flex justify-center space-x-8">
+        <img
+          src="https://i.postimg.cc/BbMPxpbj/Screenshot-67.png"
+          alt="Cap 1"
+          class="max-w-xs h-auto rounded-lg shadow-lg"
+        />
+        <img
+          src="https://i.postimg.cc/9QGVKMPp/Screenshot-66.png"
+          alt="Cap 2"
+          class="max-w-xs h-auto rounded-lg shadow-lg"
+        />
+      </div>
     </div>
-</div>
+  </section>
 
-<!-- Admin Login Modal -->
-<div id="loginModal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-    <div class="bg-white p-6 rounded-lg max-w-md w-full">
-        <div class="flex justify-between items-center mb-6">
-            <h3 class="text-2xl font-bold">Admin Login</h3>
-            <button onclick="closeModal('loginModal')" class="text-gray-500 hover:text-gray-700">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <form id="loginForm" class="space-y-4">
-            <div>
-                <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
-                <input type="text" id="username" name="username" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
-            </div>
-            <div>
-                <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
-                <input type="password" id="password" name="password" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
-            </div>
-            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded transition">
-                Login
-            </button>
+  <!-- Video Section (NEW) -->
+  <section id="video" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Watch Our Video</h2>
+      <div class="max-w-4xl mx-auto aspect-w-16 aspect-h-9">
+        <iframe
+          src="https://www.youtube.com/embed/-D5ib421H24"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="w-full h-64 md:h-96 rounded-lg shadow-lg"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+      <div class="max-w-md mx-auto">
+        <form id="contactForm" class="space-y-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full px-4 py-2 border rounded"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full px-4 py-2 border rounded"
+          />
+          <textarea
+            rows="4"
+            placeholder="Your Message"
+            class="w-full px-4 py-2 border rounded"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded transition"
+          >
+            Send Message
+          </button>
         </form>
+      </div>
     </div>
-</div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- Admin Panel -->
+  <div class="admin-panel">
+    <button
+      onclick="toggleAdminPanel()"
+      class="fixed bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full shadow-lg"
+    >
+      Admin
+    </button>
+    <div
+      id="adminPanel"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+    >
+      <div class="bg-white p-6 rounded-lg max-w-md w-full">
+        <h3 class="text-xl font-bold mb-4">Admin Panel</h3>
+        <button
+          onclick="openLoginModal()"
+          class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded mb-4"
+        >
+          Login
+        </button>
+        <button
+          onclick="closeAdminPanel()"
+          class="w-full bg-gray-300 hover:bg-gray-400 py-2 rounded"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Login Modal -->
+  <div
+    id="loginModal"
+    class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+  >
+    <div class="bg-white p-6 rounded-lg max-w-md w-full">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-2xl font-bold">Admin Login</h3>
+        <button onclick="closeModal('loginModal')" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <form id="loginForm" class="space-y-4">
+        <div>
+          <label
+            for="username"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Username</label
+          >
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+          />
+        </div>
+        <div>
+          <label
+            for="password"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded transition"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
